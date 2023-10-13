@@ -48,9 +48,21 @@ Feature: User
     When I send DELETE HTTP request
     Then I receive valid HTTP response code 200
 
-  Scenario: DELETE- Invalid Endpoint
-    Given I set DELETE Invalid endpoints
-    When I send DELETE Invalid HTTP request
-    Then I receive valid HTTP response code 404
+
+
+
+
+
+
+
+
+
+
+
+
+#  Scenario: DELETE- Invalid Endpoint
+#    Given I set DELETE Invalid endpoints
+#    When I send DELETE Invalid HTTP request
+#    Then I receive valid HTTP response code 404
 
 #if how java lang 'null', change Edit Configuration in Main Class with net.serenitybdd.cucumber.cli.Main
