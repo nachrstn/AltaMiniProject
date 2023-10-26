@@ -18,7 +18,7 @@ public class PostRegister {
     @Step("I send POST HTTP request Register")
     public void sendPostHttpRequestRegisterEndpoint(){
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "akunke8@gmail.com");
+        requestBody.put("email", "akunke1@gmail.com");
         requestBody.put("password", "123123");
         requestBody.put("fullname", "akun baru");
 
@@ -35,6 +35,6 @@ public class PostRegister {
     @Step("I receive valid data for Register")
     public void receiveValidDataForRegister(){
         restAssuredThat(response -> response.body("data.Fullname", equalTo("akun baru")));
-        restAssuredThat(response -> response.body("data.Email", equalTo("akunke8@gmail.com")));
+        restAssuredThat(response -> response.body("data.Email", equalTo("akunke1@gmail.com")));
     }
 }
