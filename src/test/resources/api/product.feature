@@ -84,14 +84,6 @@ Feature: Product
     When I send POST HTTP request Create a product invalid payload
     Then I receive response code 400 for Create a product invalid payload
 
-
-
-#  Scenario: POST - Successful Assign a product rating
-#    Given I set POST endpoints Assign a product rating
-#    When I send POST HTTP request Assign a product rating
-#    Then I receive response code 201 Assign a product rating
-#    And I receive valid data for Assign a product rating
-#
   Scenario: POST - Assign a product rating invalid endpoint
     Given I set POST Assign a product rating invalid endpoint
     When I send POST HTTP request Assign a product rating invalid endpoint
