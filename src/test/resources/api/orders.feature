@@ -1,7 +1,7 @@
-Feature: Product
+Feature: Orders
   As an quality engineer
-  I want to see list of product
-  So that I can create new product
+  I want to see list of orders
+  So that I can create new order
 
   Scenario: POST - Successful Create a new order
     Given I set POST endpoints Create a new order

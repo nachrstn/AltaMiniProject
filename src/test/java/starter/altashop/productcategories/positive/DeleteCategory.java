@@ -6,7 +6,7 @@ import net.thucydides.core.annotations.Step;
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class DeleteCategory {
-    protected String url = "https://altashop-api.fly.dev/api/categories/30160";
+    protected String url = "https://altashop-api.fly.dev/api/categories/30393";
     @Step("I set DELETE endpoints Delete a category")
     public String setDeleteEndpointDeleteCategory(){
         return url;

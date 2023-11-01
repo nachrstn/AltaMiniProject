@@ -7,7 +7,7 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 import static org.hamcrest.Matchers.equalTo;
 
 public class GetCategoriesByID {
-    protected static String url = "https://altashop-api.fly.dev/api/categories/29715";
+    protected static String url = "https://altashop-api.fly.dev/api/categories/30956";
     @Step("I set GET endpoints category by ID")
     public String setGetEndpointsCategoriesByID(){
         return url;
@@ -27,7 +27,7 @@ public class GetCategoriesByID {
 
     @Step("I receive valid data for detail category by ID")
     public void receiveValidDataForDetailCategoryByID(){
-        restAssuredThat(response -> response.body("data.ID", equalTo(29715)));
+        restAssuredThat(response -> response.body("data.ID", equalTo(30956)));
         restAssuredThat(response -> response.body("data.Name", equalTo("gaming")));
         restAssuredThat(response -> response.body("data.Description", equalTo("for gaming purposes")));
     }
